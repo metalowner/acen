@@ -1,0 +1,77 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+ul,
+img,
+input,
+span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=text], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  border: none;
+  font-size: 17px;
+}
+ 
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(0, 100, 55, 0.3);
+  padding: 3px 0px 3px 3px;
+  border: 1px solid rgba(0, 100, 55, 0.3);
+}
+
+#appSlogan,
+#userName {
+	text-align: center;
+}
+
+#menu {
+	display: flex;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#menuItem {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#userImage {
+	max-width: 100%;
+}
+
+#displayedTitle {
+	padding: 5px;
+}
+
+#displayedDescription {
+	padding: 10px;
+}
+
+#displayedInput {
+	border-bottom-style: solid;
+	border-bottom-width: 0.3px;
+}
