@@ -47,20 +47,31 @@ input[type=text]:focus, textarea:focus {
 	text-align: center;
 }
 
-#menu {
-	display: flex;
-	margin-right: auto;
-	margin-left: auto;
+#userLeftHand {
+	float: left;
+	margin-left: 3em;
 }
 
-#menuItem {
+#userRightHand {
+	float: right;
+	margin-right: 3em;
+}
+
+#userPants {
+	margin-top: 6em;
+}
+
+#interactiveWindow {
+	position: relative;
 	display: block;
-	margin-right: auto;
 	margin-left: auto;
-}
-
-#userImage {
-	max-width: 100%;
+	margin-right: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 85%;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 4px;
 }
 
 #displayedTitle {
@@ -74,4 +85,52 @@ input[type=text]:focus, textarea:focus {
 #displayedInput {
 	border-bottom-style: solid;
 	border-bottom-width: 0.3px;
+	overflow: hidden;
+}
+
+#highlights {
+	padding: 5px;
+	font-size: 1em;
+	text-transform: uppercase;
+	background-color: #fff;
+	margin-top: 1em;
+}
+
+#downfalls {
+	padding: 5px;
+	font-size: 1em;
+	text-transform: uppercase;
+	background-color: black;
+	color: white;
+	margin-top: 1em;
+}
+
+#mainValueOutput,
+#otherValuesOutput {
+	display: flex;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 1em;
+}
+
+#mainValueSpan,
+#otherValuesSpan {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 7px;
+}
+
+#mainValue,
+#otherValues {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	border: 1px solid black;
+	border-radius: 4px;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+#eventsOrganization {
+	display: flex;
 }
