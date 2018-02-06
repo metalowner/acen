@@ -85,7 +85,6 @@ input[type=text]:focus, textarea:focus {
 #displayedInput {
 	border-bottom-style: solid;
 	border-bottom-width: 0.3px;
-	overflow: hidden;
 }
 
 #highlights {
@@ -105,32 +104,58 @@ input[type=text]:focus, textarea:focus {
 	margin-top: 1em;
 }
 
-#mainValueOutput,
-#otherValuesOutput {
-	display: flex;
+#mainValueOutput {
+	display: table;
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 1em;
 }
 
-#mainValueSpan,
-#otherValuesSpan {
-	margin-left: auto;
+#otherValuesOutput {
+	display: table;
 	margin-right: auto;
-	padding: 7px;
+	margin-left: auto;
+	margin-top: 1em;
 }
 
-#mainValue,
+#mainValue {
+	padding: 7px;
+	border: 1px solid black;
+	border-radius: 4px;
+	font-size: 1.3em;
+	text-align: center;
+}
+
 #otherValues {
-	margin-left: auto;
-	margin-right: auto;
 	padding: 5px;
 	border: 1px solid black;
 	border-radius: 4px;
 	font-size: 1.2em;
 	text-align: center;
+	margin-top: 5px;
 }
 
 #eventsOrganization {
 	display: flex;
+}
+
+#bestAt {
+	width: 100%;
+}
+
+#bestAt1,
+#bestAt2,
+#bestAt3,
+#bestAt4,
+#bestAt5,
+#bestAt6 {
+	text-align: center;
+	margin-top: 1em;
+	border: 1px solid black;
+	border-radius: 4px;
+	padding: 5px;
+}
+
+#lockSpan {
+	text-align: center;
 }
