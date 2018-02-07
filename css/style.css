@@ -156,6 +156,18 @@ input[type=text]:focus, textarea:focus {
 	padding: 5px;
 }
 
+#lockDiv {
+	position: relative;
+	width: 100%;
+}
+
 #lockSpan {
+	position: absolute;
+	top: 4em;
+	left: 46%;
+	color: white;
 	text-align: center;
+	font-size: 1.3em;
+	letter-spacing: 1px;
+	font-weight: 500;
 }
