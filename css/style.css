@@ -42,6 +42,11 @@ input[type=text]:focus, textarea:focus {
   border: 1px solid rgba(0, 100, 55, 0.3);
 }
 
+#menu {
+	width: 100%;
+	margin-top: 1em;
+}
+
 #appSlogan,
 #userName {
 	text-align: center;
@@ -124,6 +129,7 @@ input[type=text]:focus, textarea:focus {
 	border-radius: 4px;
 	font-size: 1.3em;
 	text-align: center;
+	width: 75%;
 }
 
 #otherValues {
@@ -154,20 +160,9 @@ input[type=text]:focus, textarea:focus {
 	border: 1px solid black;
 	border-radius: 4px;
 	padding: 5px;
-}
-
-#lockDiv {
-	position: relative;
-	width: 100%;
+	width: 85%;
 }
 
 #lockSpan {
-	position: absolute;
-	top: 4em;
-	left: 46%;
-	color: white;
 	text-align: center;
-	font-size: 1.3em;
-	letter-spacing: 1px;
-	font-weight: 500;
 }

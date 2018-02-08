@@ -14,12 +14,10 @@
 <body>
 	<div id="container">
 
-		<input id="userName" type="text" value="Pavel Yudkevich">
-
-		<input type="text" name="appSlogan" id="appSlogan" value='So what "Tahles"?!'>
-
 		<div id="menu">
 			<img id="userFace" src="images/derp.svg" data-bind="click: startLearning">
+			<input id="userName" type="text" value="Pavel Yudkevich">
+			<input type="text" name="appSlogan" id="appSlogan" value='So what "Tahles"?!'>
 			<img id="userLeftHand" src="images/learningbadge.svg">
 			<img id="userRightHand" src="images/practicebadge.svg">
 			<img id="userPants" src="images/challengebadge.svg">
@@ -29,7 +27,7 @@
 			<form>
 				<h2 id="displayedTitle" data-bind="text: displayedTitle"></h2>
 				<span id="displayedDescription" data-bind="text: displayedDescription"></span>
-				<input id="displayedInput" type="text" name="answer" value="Answer here...">
+				<input id="displayedInput" type="text" name="answer" value="CV goes here">
 				<div id="eventsOrganization">
 					<input id="highlights" type="button" name="highlights" value="Highlights">
 					<input id="downfalls" type="button" name="downfalls" value="Downfalls">
@@ -46,6 +44,7 @@
 				<input id="otherValues" type="text" name="otherValues" value="Love">
 			</div>
 				<ul id="bestAt">
+					<span>Skills Grading</span>
 					<li><h3 id="bestAt1">1. Research and development</h3></li>
 					<li><h3 id="bestAt2">2. Human relationships</h3></li>
 					<li><h3 id="bestAt3">3. Management</h3></li>
@@ -53,10 +52,8 @@
 					<li><h3 id="bestAt5">5. Marketing</h3></li>
 					<li><h3 id="bestAt6">6. Performance</h3></li>
 				</ul>
-				<div id="lockDiv">
-					<img id="lvl10Unlock" src="images/lock.svg">
-					<span id="lockSpan">Lvl 10</span>
-				</div>
+				<img id="lvl10Unlock" src="images/lock.svg">
+				<span id="lockSpan">Lvl 10</span>
 		</div>
 	</div>
 </body>
