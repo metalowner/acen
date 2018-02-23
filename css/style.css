@@ -14,155 +14,70 @@ li,
 ul,
 img,
 input,
-span {
+span,
+textarea {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     margin: 0;
-    padding: 0;
-    list-style: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
+    border: none;
+    font-size: 1em;
+    max-width: 100%;
 }
 
-input[type=text], textarea {
-  -webkit-transition: all 0.30s ease-in-out;
-  -moz-transition: all 0.30s ease-in-out;
-  -ms-transition: all 0.30s ease-in-out;
-  -o-transition: all 0.30s ease-in-out;
-  outline: none;
-  padding: 3px 0px 3px 3px;
-  border: none;
-  font-size: 17px;
-}
- 
-input[type=text]:focus, textarea:focus {
-  box-shadow: 0 0 5px rgba(0, 100, 55, 0.3);
-  padding: 3px 0px 3px 3px;
-  border: 1px solid rgba(0, 100, 55, 0.3);
+#derp {
+	width: 20%;
+	position: fixed;
+	left: 1em;
+	bottom: 6em;
 }
 
-#menu {
-	width: 100%;
-	margin-top: 1em;
-}
-
-#appSlogan,
-#userName {
-	text-align: center;
-}
-
-#userLeftHand {
-	float: left;
-	margin-left: 3em;
-}
-
-#userRightHand {
-	float: right;
-	margin-right: 3em;
-}
-
-#userPants {
-	margin-top: 6em;
-}
-
-#interactiveWindow {
-	position: relative;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	width: 85%;
-	padding: 10px;
-	border: 1px solid black;
-	border-radius: 4px;
-}
-
-#displayedTitle {
-	padding: 5px;
-}
-
-#displayedDescription {
-	padding: 10px;
-}
-
-#displayedInput {
-	border-bottom-style: solid;
-	border-bottom-width: 0.3px;
-}
-
-#highlights {
-	padding: 5px;
-	font-size: 1em;
-	text-transform: uppercase;
-	background-color: #fff;
-	margin-top: 1em;
-}
-
-#downfalls {
-	padding: 5px;
-	font-size: 1em;
-	text-transform: uppercase;
-	background-color: black;
-	color: white;
-	margin-top: 1em;
-}
-
-#mainValueOutput {
-	display: table;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 1em;
-}
-
-#otherValuesOutput {
-	display: table;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 1em;
-}
-
-#mainValue {
-	padding: 7px;
-	border: 1px solid black;
-	border-radius: 4px;
-	font-size: 1.3em;
-	text-align: center;
+#message {
+	position: fixed;
 	width: 75%;
+	left: 1em;
+	bottom: 1em;
+	background-color: #fafafa;
+	border: 1px solid gray;
+	border-radius: 1em;
+	padding: 1em;
 }
 
-#otherValues {
-	padding: 5px;
-	border: 1px solid black;
-	border-radius: 4px;
-	font-size: 1.2em;
-	text-align: center;
-	margin-top: 5px;
-}
-
-#eventsOrganization {
-	display: flex;
-}
-
-#bestAt {
-	width: 100%;
-}
-
-#bestAt1,
-#bestAt2,
-#bestAt3,
-#bestAt4,
-#bestAt5,
-#bestAt6 {
-	text-align: center;
+#questionBox {
+	width: 80%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 1em;
+	background-color: #fafafa;
+	border: 1px solid gray;
+	border-radius: 1em;
 	margin-top: 1em;
-	border: 1px solid black;
-	border-radius: 4px;
-	padding: 5px;
-	width: 85%;
 }
 
-#lockSpan {
-	text-align: center;
+#answerBox {
+	margin-top: 1em;
+	border: 1px solid gray;
+	border-radius: 1em;
+	width: 80%;
+	padding: 1em;
+	overflow: hidden;
+	word-break: break-all;
+}
+
+#answerBox:focus {
+	border: 1px solid gray;
+}
+
+#submitButton {
+	background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 1em;
+    margin-top: 1em;
 }
