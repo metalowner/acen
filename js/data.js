@@ -179,3 +179,11 @@ var Questions = [{
 		questionDescription: 'Describe the best event that happened to you.'
 	}
 ];
+
+var botTempData = { mainValue: 'Love',
+				otherValues: [' Peace', ' Music', ' Impact', ' Responsibility'],
+				firstRA: 'Relationships',
+				otherRA: ['Performance', 'Marketing'],
+				damnation: 'Responsibility',
+				salvation: 'Cannabis'
+}
