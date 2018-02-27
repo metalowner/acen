@@ -1,0 +1,220 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+ul,
+img,
+input,
+span,
+textarea {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    text-align: center;
+    border: none;
+    font-size: 1em;
+    max-width: 100%;
+    list-style: none;
+}
+
+#menu {
+	width: 100%;
+	margin: 0px;
+	position: fixed;
+	top: 0px;
+	background-color: #D1D2D4;
+}
+
+#questionsDisplayButton {
+	color: white;
+	background-color: black;
+	padding: 1em;
+	border-style: none;
+	float: left;
+	border-right: 1px solid black;
+}
+
+#questionsDisplayButton:hover {
+	background-color: white;
+	color: black;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+#profileDisplayButton {
+	color: white;
+	background-color: black;
+	padding: 1em;
+	border-style: none;
+	float: left;
+}
+
+#profileDisplayButton:hover {
+	background-color: white;
+	color: black;
+}
+
+#derp {
+	width: 20%;
+	position: fixed;
+	left: 1em;
+	bottom: 6em;
+}
+
+#botMessanger {
+	position: fixed;
+	width: 75%;
+	left: 1em;
+	bottom: 1em;
+	background-color: #fafafa;
+	border: 1px solid gray;
+	border-radius: 1em;
+	padding: 1em;
+}
+
+#botInsights {
+	position: relative;
+	display: none;
+}
+
+#questionBox {
+	width: 80%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 1em;
+	background-color: #fafafa;
+	border: 1px solid gray;
+	border-radius: 1em;
+	margin-top: 3em;
+}
+
+#answerBox {
+	margin-top: 1em;
+	border: 1px solid gray;
+	border-radius: 1em;
+	width: 80%;
+	padding: 1em;
+	overflow: hidden;
+	word-break: break-all;
+}
+
+#answerBox:focus {
+	border: 1px solid gray;
+}
+
+#submitButton {
+	background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 1em;
+    margin-top: 1em;
+}
+
+#botMainValue {
+	border: 1px solid red;
+	border-radius: 1em;
+	padding: 0.5em;
+	line-height: 2.2em;
+}
+
+#newValueInput {
+	border-bottom: 1px solid gray;
+}
+
+#valueListItem {
+	float: left;
+	padding-right: 1em;
+}
+
+#newValueButton {
+	float: left;
+	margin-left: 3em;
+}
+
+#userProfile {
+	border: 1px solid gray;
+	border-radius: 1em;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1em;
+	background-color: #fafafa;
+	margin-top: 3em;
+}
+
+#profileHeader {
+	float: left;
+	font-size: 1.2em;
+}
+
+#userProfilePicture {
+	float: right;
+	width: 3em;
+}
+
+#mainValueHeader {
+	float: left;
+}
+
+#userMainValue {
+	border-bottom: 1px solid gray;
+}
+
+#profileValue {
+	border: 1px solid gray;
+	padding: 0.5em;
+	margin: 0.5em;
+	line-height: 3em;
+}
+
+#otherValuesHeader {
+	line-height: 3em;
+	margin-left: 0px;
+}
+
+.container {
+	float: right;
+	margin-right: 1em;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
