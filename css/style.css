@@ -54,6 +54,7 @@ textarea {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 1em;
 }
 
 #questionsDisplayButton {
@@ -227,10 +228,6 @@ textarea {
 	margin-top: 1em;
 }
 
-#mainGoalHeader {
-	margin-bottom: 1em;
-}
-
 #userProfilePicture {
 	position: relative;
 	top: -2em;
@@ -239,10 +236,6 @@ textarea {
 	max-width: 50%;
 	border: 1px solid gray;
 	border-radius: 45%;
-}
-
-#mainValueHeader {
-	float: right;
 }
 
 #userMainValue,
