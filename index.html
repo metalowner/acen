@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Achievements Engineering</title>
+ <!--Use standard charachters-->
+      <meta charset="utf-8">
+      <!--Define display scaling-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Connection to the CSS file -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!--Get app font-->
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
+</head>
+<body>
+ <div id="container">
+  <div id="menu">
+   <div class="container" onclick="toggleMenu(this)">
+     <div class="bar1"></div>
+     <div class="bar2"></div>
+     <div class="bar3"></div>
+   </div>
+   <button id="profileDisplayButton" data-bind="click: displayProfile">פרופיל</button>
+   <button id="questionsDisplayButton" data-bind="click: displayQuestionsBox">שאלות</button>
+   <span id="appName">הנדסת הישגים</span>
+  </div>
+  <div id="interactiveWindow">
+   <div id="userProfile">
+    <h2 id="profileHeader" dir="rtl">פרופיל</h2><br>
+    <img id="userProfilePicture" src="images/derp.svg"><br>
+    <span id="visionHeader">חזון</span><br>
+    <textarea id="visionInput"></textarea><br>
+    <span id="mainGoalHeader">יעד מרכזי</span><br>
+    <textarea type="text" id="mainGoalInput" data-bind="textInput: userMainGoal"></textarea><br>
+    <span id="mainValueHeader" dir="rtl">ערך מרכזי פנימי</span><br><input dir="rtl" id="userMainValue" data-bind="value: mainValueSelected"><br>
+    <span id="otherValuesHeader" dir="rtl">ערכים פנימיים אחרים</span><br><input type="text" id="otherValue"><br><div data-bind="foreach: selectedOtherValues"><input id="profileValue" data-bind="value: $data"></div><br>
+    <span id="mainOuterValue">ערך מרכזי חיצוני</span><br>
+    <input type="text" id="mainOuterValueInput"><br>
+    <span id="otherOuterValuesHeader">ערכים חיצוניים נוספים</span><br>
+    <input type="text" id="otherOuterValue"><br>
+    <span id="resultAreasHeader">דירוג תחומי תוצאה</span><br>
+    <ul id="resultAreasList" dir="rtl">
+    	<li>1. איסוף ועיבוד ידע ומידע</li>
+    	<li>2. שיווק ומכירה אישי</li>
+    	<li>3. תקשורת בינאישית</li>
+    	<li>4. תפעול</li>
+    	<li>5. פיננסים</li>
+    	<li>6. ניהול התחומים האחרים</li>
+    </ul><br>
+    <span>חסמי הצלחה</span><br>
+    <input id="successBlocker" type="text" name="successBlocker"><br><br>
+    <span>משאבים אסטרטגים</span><br>
+    <input id="strategicResource" type="text" name="strategicResource"><br><br>
+    <span dir="rtl">*בקרוב: יעדים יומיים</span><br>
+   </div>
+   <div id="questionBox" dir="rtl">
+    <h3 id="questionHeader" data-bind="text: questionHeader"></h3><br>
+    <span id="question" data-bind="text: displayedQuestion"></span><br>
+    <textarea id="answerBox" type="text" data-bind="textInput: answer"></textarea><br>
+    <button data-bind="click: previousQuestion">אחורה</button>
+    <button data-bind="click: nextQuestion">קדימה</button>
+    <button data-bind="click: submitAnswer" id="submitButton">שלח</button>
+   </div>
+   <div id="botMessanger">
+   	<img id="derp" src="images/derp.svg">
+   	<button id="hideBot" data-bind="click: hideBotFunction">X</button>
+    <span id="message" dir="rtl" data-bind="text: displayedMessage"></span>
+    <div id="botInsights" dir="rtl">
+     <span>נראה ש</span><span id="botMainValue" data-bind="text: mainValue, click: selectMainValue"></span><span> זה ערך מרכזי אצלך...</span><br>
+     <ul dir="rtl" id="botOtherValues" data-bind="foreach: otherValues">
+         <li id="valueListItem">
+             <span data-bind="text: $index"> </span>:
+             <span data-bind="text: $data"> </span><br>
+             <a href="#" data-bind="click: $parent.addValue" dir="rtl">הוסף לפרופיל</a><br>
+         </li>
+     </ul><br>
+     <button id="newValueButton" data-bind="click: addPersonalValue">הוסף ערך</button>
+    </div>
+   </div>
+  </div>
+ </div>
+</body>
+<script src="js/knockout-3.4.2.js"></script>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/data.js"></script>
+<script src="js/viewmodel.js"></script>
+</html>
